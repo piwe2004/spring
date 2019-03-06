@@ -19,5 +19,10 @@ public class BoardService {
 	
 	public void delete() throws Exception{
 		System.out.println("핵심관심 - delete ---");
+		
+		// NullPoint 예외발생
+		String str = null;
+		str.toString();
+		
 	}
 }
