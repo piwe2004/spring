@@ -3,30 +3,30 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>UserView</title>
+		<title>UserRegister</title>
 	</head>
 	<body>
-		<form action="/ch10/userView" method="post">
+		<form action="/ch10/userRegist" method="post">
 			<table border="1">
 				<tr>
 					<td>아이디</td>
-					<td><input type="text" name="uid" value=${user.uid }>${user.uid}</td>
+					<td><input type="text" name="uid"></td>
 				</tr>
 				<tr>
 					<td>이름</td>
-					<td><input type="text" name="name">${user.name}</td>
+					<td><input type="text" name="name"></td>
 				</tr>
 				<tr>
 					<td>전화번호</td>
-					<td><input type="text" name="hp">${user.hp}</td>
+					<td><input type="text" name="hp"></td>
 				</tr>
 				<tr>
 					<td>주소</td>
-					<td><input type="text" name="addr">${user.addr}</td>
+					<td><input type="text" name="addr"></td>
 				</tr>
 				<tr>
 					<td>직책</td>
-					<td><input type="text" name="pos">${user.pos}</td>
+					<td><input type="text" name="pos"></td>
 				</tr>
 				<tr>
 					<td>부서</td>
@@ -42,5 +42,6 @@
 				</tr>
 			</table>
 			<input type="submit" value="전송"> 
+		</form>
 	</body>
 </html>
