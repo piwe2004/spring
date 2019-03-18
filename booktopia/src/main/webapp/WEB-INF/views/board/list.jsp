@@ -5,7 +5,15 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>글목록</title> 
-		<link rel="stylesheet" href="/sboard/css/style.css" />
+		<link href="/booktopia/resources/css/style.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="/booktopia/resources/css/basic-jquery-slider.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="/booktopia/resources/css/mobile.css" rel="stylesheet" type="text/css">
+  <script src="/booktopia/resources/js/jquery-1.6.2.min.js" type="text/javascript"></script>
+  <script src="/booktopia/resources/js/jquery.easing.1.3.js" type="text/javascript"></script>
+  <script src="/booktopia/resources/js/stickysidebar.jquery.js" type="text/javascript"></script>
+  <script src="/booktopia/resources/js/basic-jquery-slider.js" type="text/javascript"></script>
+  <script src="/booktopia/resources/js/tabs.js" type="text/javascript"></script>
+  <script src="/booktopia/resources/js/carousel.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<div id="board">

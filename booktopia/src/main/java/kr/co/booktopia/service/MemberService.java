@@ -1,5 +1,9 @@
 package kr.co.booktopia.service;
 
-public class MemberService {
+public interface MemberService {
 
+	public void login();
+	public void register();
+	public void mypage();
+	
 }

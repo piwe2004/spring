@@ -1,5 +1,10 @@
 package kr.co.booktopia.service;
 
-public class BoardService {
+public interface BoardService {
 
+	public void list(); 
+	public void modify(); 
+	public void view(); 
+	public void write(); 
+	
 }

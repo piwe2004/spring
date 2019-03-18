@@ -1,3 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -11,8 +13,9 @@
   <script src="/booktopia/js/basic-jquery-slider.js" type="text/javascript"></script>
   <script src="/booktopia/js/tabs.js" type="text/javascript"></script>
   <script src="/booktopia/js/carousel.js" type="text/javascript"></script>
-  <title>북토피아::로그인</title>
+  <title>북토피아::마이페이지</title>
 </head>
+
 <body>
   <div id="outer_wrap">
     <div id="wrap">
@@ -94,31 +97,59 @@
       </aside>
 
       <article>
-        <h3>회원 로그인 창</h3>
-        <div id="detail_table">
-          <form action="#" method="post">
-            <table>
-              <tbody>
-                <tr class="dot_line">
-                  <td class="fixed_join">아이디</td>
-                  <td><input name="member_id" type="text" size="20"></td>
-                </tr>
-                <tr class="solid_line">
-                  <td class="fixed_join">비밀번호</td>
-                  <td><input name="member_pw" type="password" size="20"></td>
-                </tr>
-              </tbody>
-            </table>
-            <br><br>
-            <input type="submit" value="로그인">
-            <input type="button" value="초기화">
-            <br><br>
-            <a href="#">아이디 찾기</a> |
-            <a href="#">비밀번호 찾기</a> |
-            <a href="/bookshop01/member/addMember.do">회원가입</a> |
-            <a href="#">고객 센터</a>
-          </form>
-        </div>
+        <h1>최근주문내역<a href="#"><img src="/booktopia/img/btn_more_see.jpg"></a></h1>
+        <table class="list_view">
+          <tbody align="center">
+            <tr style="background:#33ff00">
+              <td>주문번호</td>
+              <td>주문일자</td>
+              <td>주문상품</td>
+              <td>주문상태</td>
+              <td>주문취소</td>
+            </tr>
+            <tr>
+              <td colspan="5" class="fixed">
+                <strong>주문한 상품이 없습니다.</strong>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br><br><br>
+        <h1>계좌내역<a href="#"><img src="/booktopia/img/btn_more_see.jpg"></a></h1>
+        <table border="0" width="100%" cellpadding="10" cellspacing="10">
+          <tbody>
+            <tr>
+              <td>예치금 &nbsp;&nbsp; <strong>10000원</strong></td>
+              <td>쇼핑머니 &nbsp;&nbsp; <strong>9000원</strong></td>
+            </tr>
+            <tr>
+              <td>쿠폰 &nbsp;&nbsp; <strong>6000원</strong></td>
+              <td>포인트 &nbsp;&nbsp; <strong>2000원</strong></td>
+            </tr>
+            <tr>
+              <td>상품권 &nbsp;&nbsp; <strong>4000원</strong></td>
+              <td>디지털머니 &nbsp;&nbsp; <strong>9000원</strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <br><br><br>
+        <h1>나의 정보<a href="#"><img src="/booktopia/img/btn_more_see.jpg"></a></h1>
+        <table border="0" width="100%" cellpadding="10" cellspacing="10">
+          <tbody>
+            <tr>
+              <td>이메일:</td>
+              <td><strong>hong@test.com</strong></td>
+            </tr>
+            <tr>
+              <td>전화번호</td>
+              <td><strong>010-1111-2222</strong></td>
+            </tr>
+            <tr>
+              <td>주소</td>
+              <td><strong>서울 강남구 강남대로 298 (역삼동)</strong></td>
+            </tr>
+          </tbody>
+        </table>
       </article>
 
       <div class="clear"></div>
@@ -169,11 +200,12 @@
       <div>
         <h5>
           <a href="#">이전</a>&nbsp;
-            <span id="cur_goods_num">1</span>/1&nbsp;
+          <span id="cur_goods_num">1</span>/1&nbsp;
           <a href="#">다음</a>
         </h5>
       </div>
     </div>
   </div>
 </body>
+
 </html>

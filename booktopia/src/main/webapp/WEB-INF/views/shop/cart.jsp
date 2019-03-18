@@ -1,3 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -11,9 +13,8 @@
   <script src="/booktopia/js/basic-jquery-slider.js" type="text/javascript"></script>
   <script src="/booktopia/js/tabs.js" type="text/javascript"></script>
   <script src="/booktopia/js/carousel.js" type="text/javascript"></script>
-  <title>북토피아::마이페이지</title>
+  <title>북토피아::장바구니</title>
 </head>
-
 <body>
   <div id="outer_wrap">
     <div id="wrap">
@@ -95,61 +96,98 @@
       </aside>
 
       <article>
-        <h1>최근주문내역<a href="#"><img src="/booktopia/img/btn_more_see.jpg"></a></h1>
         <table class="list_view">
           <tbody align="center">
             <tr style="background:#33ff00">
-              <td>주문번호</td>
-              <td>주문일자</td>
-              <td>주문상품</td>
-              <td>주문상태</td>
-              <td>주문취소</td>
+              <td class="fixed">구분</td>
+              <td colspan="2" class="fixed">상품명</td>
+              <td>정가</td>
+              <td>판매가</td>
+              <td>수량</td>
+              <td>합계</td>
+              <td>주문</td>
             </tr>
             <tr>
-              <td colspan="5" class="fixed">
-                <strong>주문한 상품이 없습니다.</strong>
+              <form name="frm_order_all_cart"></form>
+              <td>
+                <input type="checkbox" name="checked_goods" />
+              </td>
+              <td class="goods_image">
+                <a href="#">
+                  <img width="75" alt="" src="/booktopia/resource/thumb_336.png">
+                </a>
+              </td>
+              <td><h2><a href="#">짠테크 가계부</a></h2></td>
+              <td class="price"><span>30000원</span></td>
+              <td>
+                <strong>27,000원(10%할인)</strong>
+              </td>
+              <td>
+                <input type="text" id="cart_goods_qty" name="cart_goods_qty" size="3" value="1" /><br>
+                <a href="#"><img width="25" alt="" src="/booktopia/img/btn_modify_qty.jpg"></a>
+              </td>
+              <td>
+                <strong>27,000원</strong>
+              </td>
+              <td>
+                <a href="#"><img width="75" alt="" src="/booktopia/img/btn_order.jpg"></a><br>
+                <a href="#"><img width="75" alt="" src="/booktopia/img/btn_order_later.jpg"></a><br>
+                <a href="#"><img width="75" alt="" src="/booktopia/img/btn_add_list.jpg"></a><br>
+                <a href="#"><img width="75" alt="" src="/booktopia/img/btn_delete.jpg"></a>
               </td>
             </tr>
           </tbody>
         </table>
-        <br><br><br>
-        <h1>계좌내역<a href="#"><img src="/booktopia/img/btn_more_see.jpg"></a></h1>
-        <table border="0" width="100%" cellpadding="10" cellspacing="10">
+        <div class="clear"></div>
+        <br>
+        <br>
+        <table width="80%" class="list_view" style="background:#cacaff">
           <tbody>
-            <tr>
-              <td>예치금 &nbsp;&nbsp; <strong>10000원</strong></td>
-              <td>쇼핑머니 &nbsp;&nbsp; <strong>9000원</strong></td>
+            <tr align="center" class="fixed">
+              <td class="fixed">총 상품수</td>
+              <td>총 상품금액</td>
+              <td></td>
+              <td>총 배송비</td>
+              <td></td>
+              <td>총 할인 금액 </td>
+              <td></td>
+              <td>최종 결제금액</td>
             </tr>
-            <tr>
-              <td>쿠폰 &nbsp;&nbsp; <strong>6000원</strong></td>
-              <td>포인트 &nbsp;&nbsp; <strong>2000원</strong></td>
-            </tr>
-            <tr>
-              <td>상품권 &nbsp;&nbsp; <strong>4000원</strong></td>
-              <td>디지털머니 &nbsp;&nbsp; <strong>9000원</strong></td>
+            <tr cellpadding="40" align="center">
+              <td id="">
+                <p id="p_totalGoodsNum">1개 </p>
+              </td>
+              <td>
+                <p id="p_totalGoodsPrice">27,000원</p>
+              </td>
+              <td>
+                <img width="25" alt="" src="/booktopia/img/plus.jpg">
+              </td>
+              <td>
+                <p id="p_totalDeliveryPrice">0원</p>
+              </td>
+              <td>
+                <img width="25" alt="" src="/booktopia/img/minus.jpg">
+              </td>
+              <td>
+                <p id="p_totalSalesPrice">0원</p>
+              </td>
+              <td>
+                <img width="25" alt="" src="/booktopia/img/equal.jpg">
+              </td>
+              <td>
+                <p id="p_final_totalPrice">27,000원</p>
+              </td>
             </tr>
           </tbody>
         </table>
-        <br><br><br>
-        <h1>나의 정보<a href="#"><img src="/booktopia/img/btn_more_see.jpg"></a></h1>
-        <table border="0" width="100%" cellpadding="10" cellspacing="10">
-          <tbody>
-            <tr>
-              <td>이메일:</td>
-              <td><strong>hong@test.com</strong></td>
-            </tr>
-            <tr>
-              <td>전화번호</td>
-              <td><strong>010-1111-2222</strong></td>
-            </tr>
-            <tr>
-              <td>주소</td>
-              <td><strong>서울 강남구 강남대로 298 (역삼동)</strong></td>
-            </tr>
-          </tbody>
-        </table>
+        <center>
+          <br><br>
+          <a href="#"><img width="75" alt="" src="/booktopia/img/btn_order_final.jpg"></a>
+          <a href="#"><img width="75" alt="" src="/booktopia/img/btn_shoping_continue.jpg"></a>
+          <center></center>
+        </center>
       </article>
-
       <div class="clear"></div>
       <footer>
         <ul>
