@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="ns_mapper_sql_board">
+<mapper namespace="ns.mapper.sql_board">
+
+	<insert id="INSERT_BOARD" parameterType="kr.co.sboard.vo.BoardVO" useGeneratedKeys="true" keyProperty="seq">
+		INSERT INTO `JSP_BOARD` SET
+			cate=#{cate},
+			title=#{title},
+			content=#{content},
+			file=#{file},
+			uid=#{uid},
+			regip=#{regip},
+			rdate=NOW();	
+	</insert>
+	
+	<insert id="FILE_UPLOAD">
+		INSERT INTO `JSP_FILE` SET
+			parent=#{parent},
+			oldName=#{oldName},
+			newName=#{newName},
+			rdate=NOW();	
+	</insert>
+	
+	<select id="SELECT_LIST" resultType="kr.co.sboard.vo.BoardVO">
+		SELECT b.*, m.nick FROM `JSP_BOARD` AS b 
+		LEFT JOIN `JSP_MEMBER` AS m
+		ON b.uid = m.uid
+		WHERE parent=0 AND cate='notice'
+		ORDER BY seq DESC
+		LIMIT #{start}, 10;
+	</select>
+	
+	<select id="SELECT_LIST_COUNT" resultType="int">
+		SELECT COUNT(*) FROM `JSP_BOARD`
+		WHERE parent=0 AND cate='notice';
+	</select>
+	
+	<select id="SELECT_VIEW" resultType="kr.co.sboard.vo.BoardVO">
+		SELECT * FROM `JSP_BOARD` WHERE seq = #{seq};
+	</select>
+	
+	<update id="BOARD_HIT">
+		UPDATE `JSP_BOARD` SET hit = hit + 1 WHERE seq = #{seq};
+	</update>
+	
+	<update id="UPDATE_BOARD">
+		UPDATE `JSP_BOARD` SET title=#{title} AND content=#{content} WHERE seq=#{seq};
+	</update>
 
 </mapper>

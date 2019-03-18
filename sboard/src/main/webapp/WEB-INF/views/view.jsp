@@ -14,14 +14,14 @@
 					<table>
 						<tr>
 							<td>제목</td>
-							<td><input type="text" name="subject" value="테스트 제목 입니다." readonly />
+							<td><input type="text" name="title" value="${boardVO.title}" readonly />
 							</td>
 						</tr>
 						
 						<tr>
 							<td>첨부파일</td>
 							<td>
-								<a href="#">테스트.hwp</a>
+								<a href="#">${newName}</a>
 								<span>3회 다운로드</span>
 							</td>
 						</tr>
@@ -29,7 +29,7 @@
 						<tr>
 							<td>내용</td>
 							<td>
-								<textarea name="content" rows="20" readonly>테스트 내용 입니다.</textarea>
+								<textarea name="content" rows="20" readonly>${vo.content }</textarea>
 							</td>
 						</tr>
 					</table>
@@ -53,7 +53,7 @@
 					<textarea>테스트 댓글입니다.</textarea>
 					<div>
 						<a href="#" class="del">삭제</a>
-						<a href="#" class="mod">수정</a>
+						<a href="/sboard/modify" class="mod">수정</a>
 					</div>
 				</div>
 			

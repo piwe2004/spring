@@ -1,5 +1,7 @@
 package kr.co.sboard.vo;
 
+import kr.co.sboard.vo.*;
+
 public class TermsVO {
 	
 	private String terms;

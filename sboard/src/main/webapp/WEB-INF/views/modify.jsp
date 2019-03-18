@@ -10,16 +10,16 @@
 		<div id="board">
 			<h3>글쓰기</h3>
 			<div class="write">
-				<form action="/sboard/write" method="post" enctype="multipart/form-data">
+				<form action="/sboard/modify" method="post" enctype="multipart/form-data">
 					<table>
 						<tr>
 							<td>제목</td>
-							<td><input type="text" name="title" placeholder="제목을 입력하세요." required /></td>
+							<td><input type="text" name="title" placeholder="제목을 입력하세요." required />${boardVO.title}</td>
 						</tr>				
 						<tr>
 							<td>내용</td>
 							<td>
-								<textarea name="content" rows="20" required></textarea>
+								<textarea name="content" rows="20" required>${boardVo.content}</textarea>
 							</td>
 						</tr>
 						<tr>
