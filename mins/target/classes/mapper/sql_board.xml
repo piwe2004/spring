@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ns.mapper.sql_board">
+
+	<insert id="INSERT_NOTICE" parameterType="kr.co.mins.vo.NoticeVO" useGeneratedKeys="true" keyProperty="seq">
+		INSERT INTO `notice` SET
+			title=#{title},
+			content=#{content},
+			file=#{file},
+			userid=#{userid},
+			usernick=#{usernick},
+			regip=#{regip},
+			rdate=NOW();	
+	</insert>
+	
+	<select id="SELECT_NOTICE" resultType="kr.co.mins.vo.NoticeVO">
+		SELECT * FROM `notice`
+		WHERE parent=0
+		ORDER BY seq DESC;
+	</select>
+	
+</mapper>

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* 珥덇린�솕 �쁺�뿭*/
+*{margin:0; padding:0;}
+img{max-width:100%; border:0;}
+html {overflow-y:scroll}
+body {margin:0;padding:0;font-family:'notokr-demilight', 'NanumSquare', 'Malgun Gothic', dotum, sans-serif; font-weight: 500;}
+html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
+a, a:valid, a:active, a:hover, a:visited, a:checked, a:focus, a:link {text-decoration:none; border:0; color:#000}
+li,ol,ul{list-style: none;}
+/* body{background:#f4f4f4;} */ 
+/* 珥덇린�솕 �쁺�뿭 */
+
+/* 泥� Intro �옣硫� */
+
+/* 珥덇린�� �곸뿭*/
+
+/* 珥덇린�� �곸뿭 */
+
+/* 泥� Intro �λ㈃ */
+
+#pf_main{width:100%; max-width:1920px; min-width:1200px; background:url("../image/pf/pf_main.jpg") no-repeat center; overflow: hidden;}
+#pf_area{width:100%; max-width:1920px;}
+#pf_main_line{position:relative; width:586px; height:586px; top:50%; margin:-293px auto;}
+.pf_line2{max-width:414px; max-height:414px; width:414px; height:414px;    position:absolute; opacity:1;}
+#pf_line1{transform: rotate(45deg) ; transform-origin: 0% 0%; top:0; left:293px; width:0%; height:1px;  border-top:2px solid #fff;  }
+#pf_line2{transform: rotate(225deg) ; transform-origin: 0% 0%; top:295px; left:2px; width:1px; height:0%;  border-right:2px solid #fff;}
+#pf_line3{transform: rotate(225deg) ; transform-origin: 0% 0%; top:587px; left:293px; width:0%; height:1px;  border-bottom:2px solid #fff;}
+#pf_line4{transform: rotate(45deg) ; transform-origin: 0% 0%; top:293px; left:586px; width:1px; height:0%; border-left:2px solid #fff;}
+
+#pf_main_text{display: none; background:rgba(53, 147, 218, 0.7); width:450px; padding:7px 0; position:absolute; top:50%; left:50%; margin-top:-18.5px; margin-left:-225px;}
+#pf_text_top{overflow: hidden; width:100%; margin:0 auto;}
+#pf_text_top > p{float:left; color:#fff; font-size:20px; margin:0 11.2px; opacity:0;}
+
+#pf_mv_btn{display: none; position:absolute; border:1px solid #fff; width:170px; box-sizing: border-box; left:50%; margin-left:-85px; bottom:200px;}
+#pf_mv_btn > a{width:100%; padding:12px 0 12px 7px; box-sizing: border-box; text-align: center; display: block; color:#fff; font-family:'Godo', sans-serif;  letter-spacing:15px;}
+#pf_mv_btn > a:hover{background:rgb(53, 147, 218); color:#fff; transition:.7s all}
+
+/* 泥� Intro �λ㈃ */
+
+/* Main �섏씠吏� */
+
+#pg_head, #pg_footer, #pg_main{font-family: 'NanumSquare' sans-serif; width:100%; max-width:1920px; margin:0 auto; padding:64px; box-sizing: border-box; overflow: hidden;}
+#pg_head > #logo_div{float:left;  overflow: hidden;}
+#pg_head > nav{margin-left:22.64%; border-top:1px solid #909090;}
+#pg_head > nav > ul{padding-top:14px; }
+#pg_head > nav > ul > li{display: inline-block; margin:0 37px; }
+#pg_head > nav > ul > li:first-child{margin-left:20px;}
+#pg_head > nav > ul > li > a{color:#000; font-weight:500; font-size:20px;}
+
+.pg_main{padding:0 64px; overflow: hidden;}
+.pg_main > #aside_left {overflow: hidden; float:left; margin-top:100px; padding:0 30px;}
+.pg_main > #aside_left >ul > li{margin:30px 0;}
+.pg_main > #aside_left >ul > #trans_90{writing-mode:tb-rl; color:#b7b7b7; letter-spacing:1.2px; font-size:18px; line-height:15px;}
+
+#pg_main_wrap{float:left; padding-left:165px;}
+#pg_main_tit{position: relative; padding-left:182px; box-sizing: border-box;}
+#pg_main_tit > #main_tit_m{position: absolute; font-size:15px; font-weight: 900; top:0; left:0;}
+#pg_main_tit > #main_tit > #tit_sub{font-size:15px; font-weight:900;}
+#pg_main_tit > #main_tit > #tit_cont{font-size:85px; font-family: 'Nanum Myeongjo', serif;}
+#pg_main_cont {margin:80px auto; overflow: hidden;}
+#pg_main_cont > div {float:left;}
+#pg_main_cont > #main_content {margin-left:74px;}
+#pg_main_cont > #main_content > #mc_tit {font-size: 30px; font-family: 'Nanum Myeongjo', serif; font-weight:900; margin-bottom:25px;}
+#pg_main_cont > #main_content > #mc_tit > span {font-size: 65px;}
+#pg_main_cont > #main_content > #mc_ct {font-size: 20px; line-height:28px;}
+#pg_main_cont > #main_content > #mc_about_btn {color:#fff; background:#000; padding:15px 25px;; text-align: left; display: inline-block; margin-top:100px; font-size: 18px; font-weight:100;}
+#pg_main_cont > #main_content > #mc_about_btn > span {margin-left:15px; font-size: 15px; margin-right:5px;}
+
+#pg_footer{width:100%; max-width: 1420px;}
+#pg_footer > ul > li{float:left; font-size:20px; font-weight:900; margin-right:50px;}
+#pg_footer > ul > li > img, #pg_footer > ul > li > p{float:left;}
+#pg_footer > ul > li > img {margin-top:5px; margin-right:10px;}
+#pg_footer > ul > #ft_phone {float:right;}
+
+#aside_right {width:100%; max-width:366px;float:left; margin-left:50px;}
+#aside_right > div {margin-bottom:60px; }
+#aside_right > div > a {display: block; font-size:17px; font-weight:700; letter-spacing:1.5px; margin-bottom:20px; color:#000;}
+#aside_right > div > ul > li{overflow: hidden; margin-bottom:15px; box-sizing: border-box; padding:10px;}
+#aside_right > div > ul > li:hover{background:#fff; box-shadow:7px 7px 20px #bfbfbf;}
+#aside_right > #ar_portfolio .ar_ex {width:80px; height:80px; background:#000; float:left; margin-right:15px;}
+#aside_right > #ar_portfolio .ar_lt_ct {overflow: hidden; box-sizing: border-box; padding:8px 0;}
+#aside_right > div  .ar_lt_subject {color:#444343; font-size:17px; letter-spacing:1.2px; font-weight:700;}
+#aside_right > #ar_portfolio .ar_lt_ct .ar_lt_cate {margin-bottom:4px;}
+#aside_right > #ar_portfolio .ar_lt_ct .ar_lt_cate  a {color:#bababa; font-size:12px;}
+#aside_right > div  .ar_lt_date {color:#bababa; font-size:11px;}
+
+/* Main �섏씠吏� */
+
+/* About �섏씠吏� */
+
+#pg_main_wrap #about_top {margin-bottom:64px; overflow: hidden;}
+#pg_main_wrap .about_tit{padding-lefT:15px; border-top:1px solid #000; font-size:85px; font-family: 'Nanum Myeongjo', serif; text-align: right; width:330px;}
+#pg_main_wrap #about_bot .about_tit_div{overflow: hidden;}
+#pg_main_wrap #about_bot .about_tit{float:right; text-align: left;}
+#pg_main_wrap #about_bot #pg_main_cont{width:100%; overflow: hidden;}
+#pg_main_wrap #about_bot #pg_main_cont .ab_skill_li{width:30%; height:570px; float:left; background:#efefef; text-align: center; box-sizing: border-box; padding:50px 30px;}
+#pg_main_wrap #about_bot #pg_main_cont .ab_skill_li:nth-child(2){margin:0 5%;}
+#pg_main_wrap #about_bot #pg_main_cont .ab_skill_li .ab_skill_tit{font-size:20px; letter-spacing:2px; margin:15px 0;}
+#pg_main_wrap #about_bot #pg_main_cont .ab_skill_li .ab_skill_ct{font-size:15px; font-weight:200; letter-spacing:-1px; text-align: left; line-height:26px;}
+#pg_main_wrap #about_bot #pg_main_cont .ab_skill_li .ab_skill{ width:100%;}
+#pg_main_wrap #about_bot #pg_main_cont .ab_skill_li .ab_skill .skill_list{margin:5px 0;}
+#pg_main_wrap #about_bot #pg_main_cont .ab_skill_li .ab_skill .skill_list_tit{font-size:20px; text-align:left;}
+#pg_main_wrap #about_bot #pg_main_cont .ab_skill_li .ab_skill .skill_list_tit > span{float: right;}
+#pg_main_wrap #about_bot #pg_main_cont .ab_skill_li .ab_skill .skill_percent{width: 100%; height:1px; background:#dedede; margin:15px 0 10px; position:relative;}
+#pg_main_wrap #about_bot #pg_main_cont .ab_skill_li .ab_skill .skill_per_line{height:1px; position: absolute; top:0; lefT:0; background:#000;}
+#about_bot .ab_skill_li:nth-child(1) .ab_skill{margin-top:44px;}
+#about_bot .ab_skill_li:nth-child(2) .ab_skill{margin-top:68px;}
+#about_bot .ab_skill_li:nth-child(3) .ab_skill{margin-top:95px;}
+#about_bot .ab_skill_li:nth-child(1) .skill_list:nth-child(1) .skill_per_line{width:80%;}
+#about_bot .ab_skill_li:nth-child(1) .skill_list:nth-child(2) .skill_per_line{width:65%;}
+#about_bot .ab_skill_li:nth-child(1) .skill_list:nth-child(3) .skill_per_line{width:25%;}
+#about_bot .ab_skill_li:nth-child(1) .skill_list:nth-child(4) .skill_per_line{width:35%;}
+#about_bot .ab_skill_li:nth-child(2) .skill_list:nth-child(1) .skill_per_line{width:60%;}
+#about_bot .ab_skill_li:nth-child(2) .skill_list:nth-child(2) .skill_per_line{width:45%;}
+#about_bot .ab_skill_li:nth-child(3) .skill_list:nth-child(1) .skill_per_line{width:70%;}
+#about_bot .ab_skill_li:nth-child(3) .skill_list:nth-child(2) .skill_per_line{width:35%;}
+#about_bot .ab_skill_li:nth-child(3) .skill_list:nth-child(3) .skill_per_line{width:50%;}
+
+/* About �섏씠吏� */

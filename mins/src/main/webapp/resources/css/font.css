@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* Godo Font */
+
+@font-face {
+  font-family: 'Godo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Godo';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff');
+}
+
+/* �굹�닎 �룿�듃 紐⑥쓬 */
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); /* font-family: 'Nanum Gothic'; */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css); /* font-family: 'Nanum Gothic Coding'; */
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css); /* font-family: 'Nanum Myeongjo', serif; */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css); /* font-family: 'Nanum Brush Script'; */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css); /* font-family: 'Nanum Pen Script'; */
+@import url(http://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css); /* font-family: 'Nanum Gothic'; */
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css); /* font-family: 'NanumSquare', sans-serif; */
+@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
+
+/* �굹�닎 �룿�듃 紐⑥쓬 */
