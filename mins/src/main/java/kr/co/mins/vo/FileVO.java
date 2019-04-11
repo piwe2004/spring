@@ -3,6 +3,7 @@ package kr.co.mins.vo;
 public class FileVO {
 	private int seq;
 	private int parent;
+	private String cate;
 	private String oldName;
 	private String newName;
 	private int download;
@@ -19,6 +20,12 @@ public class FileVO {
 	}
 	public void setParent(int parent) {
 		this.parent = parent;
+	}
+	public String getCate() {
+		return cate;
+	}
+	public void setCate(String cate) {
+		this.cate = cate;
 	}
 	public String getOldName() {
 		return oldName;

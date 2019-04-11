@@ -18,18 +18,12 @@
 		<property name="suffix" value=".jsp"></property>
 	</bean>
 	
-	<!-- resources 경로 설정 -->
-	<mvc:annotation-driven></mvc:annotation-driven>
-	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
-	<mvc:resources location="/resources/css/" mapping="/css/**"></mvc:resources>
-	<mvc:resources location="/resources/image/" mapping="/image/**"></mvc:resources>
-	<mvc:resources location="/resources/js/" mapping="/js/**"></mvc:resources>
-	
+		
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
-			<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-			<property name="url" value="jdbc:mysql://127.0.0.1:3306/mins"></property>
-			<property name="username" value="root"></property>
-			<property name="password" value="1234"></property>
+		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" />
+		<property name="url" value="jdbc:log4jdbc:mysql://127.0.0.1:3306/mins"/>
+		<property name="username" value="root"/>
+		<property name="password" value="1234"/>
 	</bean>
 	
 	<!-- Spring JDBC 클래스 등록 -->
@@ -48,9 +42,5 @@
 		<constructor-arg ref="sqlSessionFactoryBean"></constructor-arg>
 	</bean>
 	
-	<!-- 파일업로드 설정 -->
-	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-		<property name="maxUploadSize" value="10000000"></property>
-	</bean>
 
 </beans>

@@ -35,7 +35,7 @@ public class MemberController {
 			//세션저장
 			sess.setAttribute("member", member);
 			
-			return "redirect:/notice/list";
+			return "redirect:/main";
 			
 		} else {
 			
@@ -51,7 +51,7 @@ public class MemberController {
 		
 			sess.invalidate();
 			
-			return "redirect:/member/login";
+			return "redirect:/main";
 		
 	}
 	

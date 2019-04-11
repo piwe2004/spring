@@ -44,3 +44,8 @@
 .board_btn{background:#fff; border:2px solid; padding:5px 13px;  font-size:15px; font-family: 'Noto Sans Korean';}
 .wt_btn > div:before{position:absolute; content:""; display:block; top:0px; left:0px; width:13px; height:13px; background:#fff; z-index:10}
 .wt_btn > div:after{position:absolute; content:""; display:block; bottom:0px; right:0px; width:13px; height:13px; background:#fff; z-index: 10}
+
+#list_num_area{margin:40px auto 0; }
+#list_num_area > ul{display:inline-block;}
+#list_num_area .list_num{margin:0 4px; display:inline-block;}
+#list_num_area .list_num > a{font-size: 20px; color:#555; display: block; padding:3px 10px;}

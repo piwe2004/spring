@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="/mins/css/board.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+	
     <style>
 
 
     </style>
     <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//naver.github.io/egjs-jquery-transform/release/latest/dist/transform.js"></script>
   </head>
   <body>
     <header id="pg_head">
@@ -27,8 +30,8 @@
         <ul>
           <li><a href="/mins/main" title="메인 페이지 이동 하는 버튼">HOME</a></li>
           <li><a href="/mins/about" title="소개 페이지 이동 하는 버튼">ABOUT</a></li>
-          <li><a href="/mins/pf/portfolio" title="포트폴리오 페이지 이동 하는 버튼">PORTFOLIO</a></li>
-          <li><a href="/mins/notice/list" title="공지사항 페이지 이동 하는 버튼">NOTICE</a></li>
+          <li><a href="/mins/list?cate=portfolio" title="포트폴리오 페이지 이동 하는 버튼">PORTFOLIO</a></li>
+          <li><a href="/mins/list?cate=notice" title="공지사항 페이지 이동 하는 버튼">NOTICE</a></li>
         </ul>
       </nav>
     </header>

@@ -1,4 +1,15 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page import="java.lang.ProcessBuilder.Redirect"%>
+<%@page import="kr.co.mins.vo.MemberVO"%>
+<%
+
+MemberVO member = (MemberVO)session.getAttribute("member");
+if(member == null){
+	
+	response.sendRedirect("/mins/list/portfolio");
+}
+
+%>
 <%@ include file="../head.jsp" %>
       <article id="pg_board_wrap">
         <div id="nt_warp">

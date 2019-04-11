@@ -8,7 +8,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import kr.co.mins.dao.BoardDao;
-import kr.co.mins.vo.NoticeVO;
+import kr.co.mins.vo.BoardVO;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -20,16 +20,21 @@ public class BoardDaoTest {
 	
 	@Test
 	public void writeTest() {		
-		NoticeVO vo = new NoticeVO();
+		BoardVO vo = new BoardVO();
 		
 		vo.setTitle("제목 테스트입니다.");
 		vo.setContent("내용");
 		vo.setUserid("abcd1122");
 		vo.setRegip("129.1.1.1");
 		
-		int seq = dao.nt_write(vo);
+		dao.writeResult(vo);
 		
-		System.out.println("write 테스트 완료!!!" + seq);
+		System.out.println("write 테스트 완료!!!" + vo);
+	}
+	
+	
+	public void list() {
+		dao.list(1, "notice");
 	}
 	
 
